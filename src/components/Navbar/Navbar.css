@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo  {
+    padding: 5px 35px;
+  }
+  .search-bar {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .search-bar form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+  }
+  
+  .search-bar button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .buttons button {
+    margin-left: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-button {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .notifications-button {
+    background-color: #fff;
+    color: #333;
+  }
+  
