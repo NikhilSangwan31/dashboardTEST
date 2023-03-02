@@ -1,5 +1,4 @@
-import { Route, Navigate } from "react-router-dom";
-import LoginPage from "./components/Login/LoginPage";
+import { Navigate } from "react-router-dom";
 import Main from "./Main";
 
 function PrivateRoute({ isLogin, redirectPath = "/landing" }) {

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Card from "../../common/Card";
 import "./Dashboard.css";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 // import { a } from 'react-router-dom';
 
@@ -39,7 +40,7 @@ const Tasks = () => {
           <div>
             <Card
               styles={{
-                marginTop: 5,
+                
                 height: "45vh",
                 width: "43vw",
                 backgroundColor: "#fff",
@@ -50,7 +51,6 @@ const Tasks = () => {
             </Card>
             <Card
               styles={{
-                marginTop: 5,
                 height: "20vh",
                 width: "43vw",
                 backgroundColor: "#fff",
@@ -92,39 +92,57 @@ const Tasks = () => {
       <div className="taskHeader">
         <h3 className="headerName">Tasks</h3>
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <div
-            style={{
-              width: "33.33%",
-              color: tabIndex === 0 ? "#609dfe" : "#000",
-              display: "flex",
-              justifyContent: "center",
-            }}
-            onClick={() => handleTabChange(0)}
-          >
-            Daily
+          <AiOutlineLeft
+            style={{ marginTop: 5, color: "grey", paddingRight: 10 }}
+            size={16}
+          />
+          <div className="tab-container">
+            <div
+              style={{
+                color: tabIndex === 0 ? "#609dfe" : "#000",
+                display: "flex",
+                justifyContent: "center",
+              }}
+              className={tabIndex === 0 ? "active" : ""}
+              onClick={() => handleTabChange(0)}
+            >
+              Daily
+            </div>
+            <div className={tabIndex === 0 ? "underline" : "line"}></div>
           </div>
-          <div
-            style={{
-              width: "33.33%",
-              color: tabIndex === 1 ? "#609dfe" : "#000",
-              display: "flex",
-              justifyContent: "center",
-            }}
-            onClick={() => handleTabChange(1)}
-          >
-            Pending
+          <div className="tab-container">
+            <div
+              style={{
+                color: tabIndex === 1 ? "#609dfe" : "#000",
+                display: "flex",
+                justifyContent: "center",
+              }}
+              className={tabIndex === 1 ? "active" : ""}
+              onClick={() => handleTabChange(1)}
+            >
+              Pending
+            </div>
+            <div className={tabIndex === 1 ? "underline" : "line"}></div>
           </div>
-          <div
-            style={{
-              width: "33.33%",
-              color: tabIndex === 2 ? "#609dfe" : "#000",
-              display: "flex",
-              justifyContent: "center",
-            }}
-            onClick={() => handleTabChange(2)}
-          >
-            Monthly
+          <div className="tab-container">
+            <div
+              style={{
+                
+                color: tabIndex === 2 ? "#609dfe" : "#000",
+                display: "flex",
+                justifyContent: "center",
+              }}
+              className={tabIndex === 2 ? "active" : ""}
+              onClick={() => handleTabChange(2)}
+            >
+              Monthly
+            </div>
+            <div className={tabIndex === 2 ? "underline" : "line"}></div>
           </div>
+          <AiOutlineRight
+            style={{ marginTop: 5, color: "grey" }}
+            size={16}
+          />
         </div>
       </div>
 

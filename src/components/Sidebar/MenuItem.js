@@ -8,9 +8,9 @@ const MenuItem = ({ title, icon,active }) => {
     <>
       <li className= "list-section">
         {icon}
-        <a className={active ? "menu-item" :"" }to="/dashboard">
+        <div className={active ? "menu-item" :"" } >
           {title}
-        </a>
+        </div>
       </li>
     </>
   );

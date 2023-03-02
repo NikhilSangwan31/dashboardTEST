@@ -1,16 +1,30 @@
-.main-container{
-    display: flex;
-    flex-direction: row;
+.main-container {
+  display: flex;
+  flex-direction: row;
 }
-.div-container{
-    height: 86.5vh;
+.div-container {
+  height: 86.5vh;
 }
 
-.taskHeader{
-   background-color: #fff;
-   padding: 10px;
-   border-radius: 5px;
+.taskHeader {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
 }
-.headerName{
-    color: #609dfe;
+.headerName {
+  color: #609dfe;
+}
+.underline {
+  margin-top: 5px;
+  height: 3px;
+  background-color: blue;
+  transition: all 0.3s ease;
+}
+.line{
+    margin-top: 5px; 
+}
+.tab-container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
 }
